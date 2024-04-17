@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0EBE7"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:padding="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Inut Your  Numbar"
+                app:hintTextColor="@color/black"
+                app:helperText="Required"
+                app:counterEnabled="true"
+                app:endIconMode="clear_text"
+                app:counterMaxLength="20"
+                app:helperTextTextColor="@color/black"
+                app:startIconDrawable="@drawable/baseline_contact_phone_24"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:inputType="number"
+                    android:id="@+id/editTextPhoneNumber"
+                    android:maxLength="15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+
+
+        <Spinner
+        android:spinnerMode="dialog"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/spinnerSimSelection"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextPhoneNumber"/>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerSimSelection"
+            android:text="Call" />
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAutoRedial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCall"
+        android:text="Auto Redial"/>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAutoRedial"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="58dp"
+        android:text="Choose" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
